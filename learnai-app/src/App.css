@@ -1,0 +1,54 @@
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Features from "./components/Features";
+import HowItWorks from "./components/HowItWorks";
+import Footer from "./components/Footer";
+
+function App() {
+  return (
+    <div style={{ backgroundColor: "#0f172a", minHeight: "100vh" }}>
+      <Header />
+      <Hero />
+      <Features />
+      <HowItWorks />
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
+```
+
+Lưu tất cả file.
+
+---
+
+## ✅ Kiểm tra kết quả
+
+Mở trình duyệt `http://localhost:5173`, bạn sẽ thấy:
+
+- Header: "LearnAI" trái, nav links phải
+- Hero: tiêu đề lớn, mô tả, nút xanh
+- 4 feature cards nằm cạnh nhau, hover nổi lên + viền xanh
+- 4 bước "Cách hoạt động" với số tròn xanh
+- Footer
+
+Nếu lỗi → F12 → Console → gửi lỗi cho tôi.
+
+---
+
+## Cấu trúc project lúc này
+```
+learnai-app/
+  └── src/
+      ├── components/
+      │   ├── Header.jsx
+      │   ├── Hero.jsx
+      │   ├── FeatureCard.jsx
+      │   ├── Features.jsx
+      │   ├── HowItWorks.jsx
+      │   └── Footer.jsx
+      ├── App.jsx
+      ├── App.css (rỗng)
+      ├── index.css
+      └── main.jsx (không sửa)
