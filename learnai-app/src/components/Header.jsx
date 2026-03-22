@@ -1,18 +1,10 @@
 function Header() {
   return (
-    <header style={{
-      backgroundColor: "#1e293b",
-      padding: "16px 32px",
-      display: "flex",
-      justifyContent: "space-between",
-      alignItems: "center",
-      borderBottom: "1px solid #334155",
-    }}>
-      <h1 style={{ color: "#e2e8f0", fontSize: "22px" }}>LearnAI</h1>
-      <nav>
-        <a href="#features" style={{ color: "#94a3b8", marginLeft: "24px", textDecoration: "none", fontSize: "14px" }}>Tính năng</a>
-        <a href="#how-it-works" style={{ color: "#94a3b8", marginLeft: "24px", textDecoration: "none", fontSize: "14px" }}>Cách hoạt động</a>
-        <a href="#signup" style={{ color: "#94a3b8", marginLeft: "24px", textDecoration: "none", fontSize: "14px" }}>Đăng ký</a>
+    <header className="bg-slate-800 px-8 py-4 flex justify-between items-center border-b border-slate-700">
+      <h1 className="text-slate-200 text-xl font-bold">LearnAI</h1>
+      <nav className="flex gap-6">
+        <a href="#features" className="text-slate-400 text-sm no-underline hover:text-slate-200 transition-colors">Tính năng</a>
+        <a href="#how-it-works" className="text-slate-400 text-sm no-underline hover:text-slate-200 transition-colors">Cách hoạt động</a>
       </nav>
     </header>
   );
